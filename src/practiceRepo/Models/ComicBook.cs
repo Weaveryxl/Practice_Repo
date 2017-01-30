@@ -11,7 +11,7 @@ namespace practiceRepo.Models
         public string SeriesTitle { set; get; }
         public int IssueNumber { get; set; }
         public string DescriptionHtml { get; set; }
-        public string[] Artists { get; set; }
+        public artist[] Artists { get; set; }
         public bool Favorite { set; get; }
 
         public string DisplayText
