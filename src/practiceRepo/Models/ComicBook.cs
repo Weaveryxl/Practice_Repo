@@ -14,5 +14,21 @@ namespace practiceRepo.Models
         public string[] Artists { get; set; }
         public bool Favorite { set; get; }
 
+        public string DisplayText
+        {
+            get
+            {
+                return SeriesTitle + " #" + IssueNumber; 
+            }
+        }
+        // series-title-issuenumber.jpg
+        public string CoverImageFileName
+        {
+            get
+            {
+                return SeriesTitle.Replace(" ", "-")
+                    .ToLower() + "-" + IssueNumber + ".jpg";
+            }
+        }
     }
 }
